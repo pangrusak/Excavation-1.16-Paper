@@ -1,0 +1,24 @@
+name: Excavation
+version: 1.0.0
+main: me.pangrusak.excavation.ExcavationPlugin
+api-version: 1.16
+author: Pangrusak
+description: Sneak-mine pickaxe blocks in a 3x3x3 cube using the Excavation book.
+
+depend:
+  - Vault
+
+commands:
+  excavation:
+    description: Gives or manages Excavation books.
+    usage: /excavation givebook <player>
+    permission: excavation.admin
+
+  buyexcavation:
+    description: Buys an Excavation I book.
+    usage: /buyexcavation
+
+permissions:
+  excavation.admin:
+    description: Allows giving Excavation books.
+    default: op
